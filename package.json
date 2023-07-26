@@ -31,6 +31,7 @@
     "react-native-screens": "^3.22.1",
     "react-native-vector-icons": "^10.0.0",
     "react-native-vision-camera": "^2.15.4",
+    "vision-camera-code-scanner": "^0.2.0",
     "zustand": "^4.3.9"
   },
   "devDependencies": {

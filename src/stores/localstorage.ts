@@ -1,12 +1,11 @@
 import {MMKVLoader, useMMKVStorage} from 'react-native-mmkv-storage';
+import type {SavedBarcode} from 'typings/commons';
 
-// TODO: tự thêm/sửa theo nhu cầu sử dụng
 type MMKVType = {
-  username: string;
+  barcodes: SavedBarcode[];
 };
 
 const MMKV = new MMKVLoader()
-  // TODO: đổi id tùy ý
   .withInstanceID('9r7ohsZuNbs')
   .withEncryption()
   .initialize();
