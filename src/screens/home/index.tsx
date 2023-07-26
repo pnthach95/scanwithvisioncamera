@@ -166,7 +166,11 @@ const HomeScreen = () => {
 
   return (
     <View className="flex-1 items-center justify-center">
-      <ActivityIndicator size="large" />
+      {cameraPermissionStatus === 'authorized' ? (
+        <Text variant="headlineMedium">Camera is not available</Text>
+      ) : (
+        <ActivityIndicator size="large" />
+      )}
     </View>
   );
 };
